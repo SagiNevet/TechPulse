@@ -1,4 +1,9 @@
 import streamlit as st
+
+st.set_page_config(
+    page_title="TechPulse – Product LifeCycle Analysis",
+    page_icon="🚀"
+)
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -106,20 +111,20 @@ def format_duration(td):
 # Tabs – Lifecycle Tab
 #####################################
 def lifecycle_tab():
-    st.header("Product Lifecycle Analysis (Multi-Product)")
-    st.write("הזן רשימת מוצרים (מופרדים בפסיק). לדוגמה: `iphone 12 pro, iphone 13 pro, iphone 14 pro`")
-    product_query = st.text_input("רשימת מוצרים:", "iphone 12 pro, iphone 13 pro, iphone 14 pro", key="lifecycle_query")
+    st.header("⏳Product Lifecycle Analysis")
+    st.write("Write products you would like to analyze, for example: `iphone 12 pro, iphone 13 pro, iphone 14 pro`")
+    product_query = st.text_input("Enter Product Names (seperated by comma)", "iphone 12 pro, iphone 13 pro, iphone 14 pro", key="lifecycle_query")
     
-    timeframe_options = ["today 5-y", "today 12-m", "today 3-m", "today 1-m"]
-    selected_timeframe = st.selectbox("בחר טווח זמן:", options=timeframe_options, index=0, key="lifecycle_timeframe")
+    timeframe_options = ["Last 5 Years", "Last 12 Months", "Last 3 Months", "Last 1 Month"]
+    selected_timeframe = st.selectbox("Choose time range", options=timeframe_options, index=0, key="lifecycle_timeframe")
     
     geo_options = {"ארה\"ב (US)": "US", "ישראל (IL)": "IL", "בריטניה (GB)": "GB", "עולמי (אין קוד)": ""}
-    selected_geo_label = st.selectbox("בחר/י אזור:", list(geo_options.keys()), index=1, key="lifecycle_geo")
+    selected_geo_label = st.selectbox("Choose location", list(geo_options.keys()), index=1, key="lifecycle_geo")
     selected_geo = geo_options[selected_geo_label]
     
-    threshold = st.number_input("רף עניין (למשל 20):", value=20)
+    threshold = st.number_input("When is the product dying? (depending on company standard, interest rate)", value=20)
     
-    if st.button("נתח חיי מוצר", key="lifecycle_analyze"):
+    if st.button("🧠Click To Start Analyzing Products", key="lifecycle_analyze"):
         with st.spinner("אוסף נתוני Google Trends..."):
             keywords = [k.strip() for k in product_query.split(",") if k.strip()]
             if not keywords:
@@ -170,15 +175,15 @@ def lifecycle_tab():
 # Other Tabs (דוגמאות)
 #####################################
 def google_trends_tab_pytrends():
-    st.header("Google Trends (pytrends)")
-    user_keywords = st.text_input("הכנס/י רשימת ביטויים (מופרדים בפסיק):", value="iPhone 13 Pro, iPhone 12 Pro", key="gt_keywords")
+    st.header("📈 Google Trends (pytrends)")
+    user_keywords = st.text_input("Enter Product Names (seperated by comma)", value="iPhone 13 Pro, iPhone 12 Pro", key="gt_keywords")
     keywords_list = [kw.strip() for kw in user_keywords.split(",") if kw.strip()]
-    timeframe_options = ["today 5-y", "today 12-m", "today 3-m", "today 1-m"]
-    selected_timeframe = st.selectbox("בחר טווח זמן:", options=timeframe_options, index=0, key="gt_timeframe")
+    timeframe_options = ["Last 5 Years", "Last 12 Months", "Last 3 Months", "Last 1 Month"]
+    selected_timeframe = st.selectbox("Choose time range", options=timeframe_options, index=0, key="gt_timeframe")
     geo_options = {"ארה\"ב (US)": "US", "ישראל (IL)": "IL", "בריטניה (GB)": "GB", "עולמי (אין קוד)": ""}
-    selected_geo_label = st.selectbox("בחר/י אזור:", list(geo_options.keys()), index=0, key="gt_geo")
+    selected_geo_label = st.selectbox("Choose location", list(geo_options.keys()), index=0, key="gt_geo")
     selected_geo = geo_options[selected_geo_label]
-    if st.button("השווה מגמות", key="gt_compare"):
+    if st.button("🧠 Click To Analyze", key="gt_compare"):
         if not keywords_list:
             st.error("נא להזין לפחות ביטוי אחד לחיפוש.")
         else:
@@ -194,9 +199,9 @@ def google_trends_tab_pytrends():
                     st.dataframe(trends_df)
 
 def zap_search_tab():
-    st.header("Zap Search")
-    query = st.text_input("מה ברצונך לחפש בזאפ?", "iphone 12 pro", key="zap_query")
-    if st.button("חפש בזאפ", key="zap_search"):
+    st.header("🔍 Zap Search")
+    query = st.text_input("What would you like to search on Zap?", "iphone 12 pro", key="zap_query")
+    if st.button("🔍 Click to search on Zap", key="zap_search"):
         with st.spinner("סורק את זאפ..."):
             results = scrape_zap_search(query)
             if not results:
@@ -213,9 +218,9 @@ def zap_search_tab():
                     st.write("---")
 
 def trends_scraper_tab():
-    st.header("Google Trends Scraper (Selenium)")
-    user_query = st.text_input("מונחי חיפוש (מופרדים בפסיק):", "iphone 12 pro", key="ts_query")
-    if st.button("סרוק Google Trends (Selenium)", key="ts_scrape"):
+    st.header("🕷️ Google Trends Scraper (Selenium)")
+    user_query = st.text_input("Enter Product Names (seperated by comma)", "iphone 12 pro", key="ts_query")
+    if st.button("🕷️Scan Google Trends (Using Selenium)", key="ts_scrape"):
         with st.spinner("מריץ דפדפן..."):
             data = scrape_google_trends(user_query)
             if not data:
@@ -228,12 +233,12 @@ def trends_scraper_tab():
 # Main App: Tabs Interface
 #####################################
 def main():
-    st.title("TechPulse – ניתוח מגמות וסריקה")
+    st.title("🚀TechPulse - Product LifeCycle⏳")
     tab1, tab2, tab3, tab4 = st.tabs([
-        "Google Trends (pytrends)", 
-        "Zap Search", 
-        "Google Trends Scraper", 
-        "Product Lifecycle"
+        "📈Google Trends (pytrends)", 
+        "🔍Zap Search", 
+        "🕷️Google Trends Scraper", 
+        "⏳Product Lifecycle"
     ])
     with tab1:
         google_trends_tab_pytrends()
