@@ -2,3 +2,9 @@ streamlit
 pytrends
 pandas
 matplotlib
+fastapi
+uvicorn
+pydantic
+requests
+selenium
+webdriver-manager
