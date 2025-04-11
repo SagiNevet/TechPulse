@@ -25,7 +25,7 @@
 
 # Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/TechPulse.git
+git clone https://github.com/SagiNevet/TechPulse.git
 cd TechPulse
 ```
 
