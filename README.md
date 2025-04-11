@@ -12,9 +12,10 @@
 - 🎨 Visualize lifecycle curves via Matplotlib + Seaborn
 ---
 
-## 🖼 Demo Screenshot
+## 🖼️ Demo Screenshot
 
-<a href="https://ibb.co/pv4MCdQB"><img src="https://i.ibb.co/KjVfCWDp/Screenshot-2025-04-10-at-13-28-38.png" alt="Screenshot-2025-04-10-at-13-28-38" border="0"></a>
+[![TechPulse UI Demo](https://i.ibb.co/pv4MCdQ/TechPulse-UI-Demo.png)](https://ibb.co/pv4MCdQB)
+
 
 
 ---
