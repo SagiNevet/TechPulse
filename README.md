@@ -41,7 +41,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-#💡 Technologies Used
+# 💡 Technologies Used
 Python 3
 
 Streamlit
@@ -56,7 +56,7 @@ Pandas / NumPy
 
 Matplotlib / Seaborn
 
-#🧩 Requirements
+# 🧩 Requirements
 Google Chrome must be installed
 
 Make sure ChromeDriver matches your local Chrome version
@@ -69,13 +69,13 @@ If PyTrends fails with error 429 (too many requests), the app will automatically
 
 For Selenium scraping, ensure ChromeDriver opens a visible browser or update headless mode if needed
 
-#🚧 Roadmap
+# 🚧 Roadmap
  Add country selector for localized trends
 
  Add Amazon/B&H scraping fallback
 
  Save & export lifecycle reports
 
- #🙌 Contributions Welcome
+ # 🙌 Contributions Welcome
 Pull requests, ideas, and feature suggestions are more than welcome. Let’s improve TechPulse together!
 
