@@ -14,7 +14,7 @@
 
 ## 🖼️ Demo Screenshot
 
-![Screenshot 2025-04-10 at 13.28.38.png](<https://media-hosting.imagekit.io/60f8cba1e7d04e17/Screenshot%202025-04-10%20at%2013.28.38.png?Expires=1838995190&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=eC3Qo7ahWeiqN8ZvITQH8f3caFMZBUVG0kRob9-dNYJirRXV4yFFrryqF~EX-tNffYVk-bd1oNp9j2qG9Tnw7r0JK4AEgCBA3-QY5rzI9fXPcSBIk0XByJIe5HxF~MTbg2nwLHUHd4loqaCjTrhOiXZ7nER9CcX25izbtuS17~vtxf4cXVw0tS~Z7k8WpN9DHnN14d2Y0b~hh9K3Tfu7DTmxtwaFWOQJJy4K~P-E3esN0sPm1hnrAR5M414QdRoXejikLYbx~4KT07sY3dAf4YywFVUCySfC6i9CSKukuvpn4ECJmPkN0Y4y6y7dG~mViQPcNpJD9UOy5JY0JNMZ7w__>)
+![TechPulse UI Demo](<https://media-hosting.imagekit.io/60f8cba1e7d04e17/Screenshot%202025-04-10%20at%2013.28.38.png?Expires=1838995190&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=eC3Qo7ahWeiqN8ZvITQH8f3caFMZBUVG0kRob9-dNYJirRXV4yFFrryqF~EX-tNffYVk-bd1oNp9j2qG9Tnw7r0JK4AEgCBA3-QY5rzI9fXPcSBIk0XByJIe5HxF~MTbg2nwLHUHd4loqaCjTrhOiXZ7nER9CcX25izbtuS17~vtxf4cXVw0tS~Z7k8WpN9DHnN14d2Y0b~hh9K3Tfu7DTmxtwaFWOQJJy4K~P-E3esN0sPm1hnrAR5M414QdRoXejikLYbx~4KT07sY3dAf4YywFVUCySfC6i9CSKukuvpn4ECJmPkN0Y4y6y7dG~mViQPcNpJD9UOy5JY0JNMZ7w__>)
 
 
 
