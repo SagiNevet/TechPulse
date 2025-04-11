@@ -20,20 +20,24 @@
 
 ## 🛠 Setup & Run
 
-```bash
+
 # Clone the repository
+```bash
 git clone https://github.com/YOUR_USERNAME/TechPulse.git
 cd TechPulse
 ```
-```bash
+
 # Create virtual environment
+```bash
 python3 -m venv venv
 source venv/bin/activate      # On Windows: venv\Scripts\activate
 ```
 # Install dependencies
-pip install -r requirements.txt
 ```bash
+pip install -r requirements.txt
+```
 # Run the app
+```bash
 streamlit run app.py
 ```
 
