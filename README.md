@@ -24,13 +24,54 @@
 # Clone the repository
 git clone https://github.com/YOUR_USERNAME/TechPulse.git
 cd TechPulse
-
+```
+```bash
 # Create virtual environment
 python3 -m venv venv
 source venv/bin/activate      # On Windows: venv\Scripts\activate
-
+```
 # Install dependencies
 pip install -r requirements.txt
-
+```bash
 # Run the app
 streamlit run app.py
+```
+
+#💡 Technologies Used
+Python 3
+
+Streamlit
+
+PyTrends
+
+Selenium
+
+BeautifulSoup
+
+Pandas / NumPy
+
+Matplotlib / Seaborn
+
+#🧩 Requirements
+Google Chrome must be installed
+
+Make sure ChromeDriver matches your local Chrome version
+
+Expected path for driver:
+```bash
+/chromedriver-win64/chromedriver.exe
+```
+If PyTrends fails with error 429 (too many requests), the app will automatically switch to Selenium scraping
+
+For Selenium scraping, ensure ChromeDriver opens a visible browser or update headless mode if needed
+
+#🚧 Roadmap
+ Add country selector for localized trends
+
+ Add Amazon/B&H scraping fallback
+
+ Save & export lifecycle reports
+
+ #🙌 Contributions Welcome
+Pull requests, ideas, and feature suggestions are more than welcome. Let’s improve TechPulse together!
+
