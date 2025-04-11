@@ -14,7 +14,7 @@
 
 ## 🖼 Demo Screenshot
 
-![TechPulse UI Demo](https://i.ibb.co/pv4MCdQ/TechPulse-UI-Demo.png)
+![TechPulse UI Demo](https://ibb.co/pv4MCdQB)
 
 
 ---
