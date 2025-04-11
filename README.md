@@ -42,39 +42,39 @@ streamlit run app.py
 ```
 
 # 💡 Technologies Used
-Python 3
+- Python 3
 
-Streamlit
+- Streamlit
 
-PyTrends
+- PyTrends
 
-Selenium
+- Selenium
 
-BeautifulSoup
+- BeautifulSoup
 
-Pandas / NumPy
+- Pandas / NumPy
 
-Matplotlib / Seaborn
+- Matplotlib / Seaborn
 
 # 🧩 Requirements
-Google Chrome must be installed
+- Google Chrome must be installed
 
-Make sure ChromeDriver matches your local Chrome version
+- Make sure ChromeDriver matches your local Chrome version
 
 Expected path for driver:
 ```bash
 /chromedriver-win64/chromedriver.exe
 ```
-If PyTrends fails with error 429 (too many requests), the app will automatically switch to Selenium scraping
+- If PyTrends fails with error 429 (too many requests), the app will automatically switch to Selenium scraping
 
-For Selenium scraping, ensure ChromeDriver opens a visible browser or update headless mode if needed
+- For Selenium scraping, ensure ChromeDriver opens a visible browser or update headless mode if needed
 
 # 🚧 Roadmap
- Add country selector for localized trends
+- Add country selector for localized trends
 
- Add Amazon/B&H scraping fallback
+- Add Amazon/B&H scraping fallback
 
- Save & export lifecycle reports
+- Save & export lifecycle reports
 
  # 🙌 Contributions Welcome
 Pull requests, ideas, and feature suggestions are more than welcome. Let’s improve TechPulse together!
